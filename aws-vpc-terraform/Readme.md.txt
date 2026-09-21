@@ -1,3 +1,4 @@
+
 # 🌐 AWS VPC Networking with Terraform (IaC)
 
 Infrastructure as Code (IaC) using **Terraform** to provision an **AWS VPC** with public and private subnets, an Internet Gateway, a NAT Gateway, route tables, security groups, and two EC2 instances (one public and one private).
@@ -6,7 +7,7 @@ Infrastructure as Code (IaC) using **Terraform** to provision an **AWS VPC** wit
 
 ## 📐 Architecture
 
-```
+```text
                           Internet
                              │
                     ┌────────▼────────┐
@@ -175,7 +176,7 @@ Remember to run `terraform destroy` when you finish testing.
 
 ## 📁 Suggested Project Structure
 
-```
+```text
 .
 ├── main.tf            # Main resources
 ├── variables.tf       # Variable declarations
@@ -188,6 +189,7 @@ Remember to run `terraform destroy` when you finish testing.
 ## 🛠️ Technologies
 
 ![Terraform](https://img.shields.io/badge/Terraform-7B42BC?style=for-the-badge&logo=terraform&logoColor=white)
+
 ![AWS](https://img.shields.io/badge/AWS-232F3E?style=for-the-badge&logo=amazonaws&logoColor=white)
 
 ---
@@ -195,6 +197,7 @@ Remember to run `terraform destroy` when you finish testing.
 ## 👤 Author
 
 Made by **Moises Miguel**
+
 [GitHub](https://github.com/Mmiguel08) • [LinkedIn](https://www.linkedin.com/in/moisesmiguel08)
 
 ---
