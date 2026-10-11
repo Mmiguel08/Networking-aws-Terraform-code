@@ -2,7 +2,7 @@
 
 ## Architecture
 <p align="center">
-  <img src="assets/topology.png" alt="Topology" width="750">
+  <img src="assets/Topology.png" alt="Topology" width="750">
 </p>
 
 - VPC-A has an Internet Gateway; EC2-A sits in the public subnet.
