@@ -65,7 +65,7 @@ aws elbv2 describe-target-health --region ap-south-1 --target-group-arn <tg-arn>
 ```
 
 ## Screenshots
-### Download File from Ec2 Instance
+### Testing From Consumer To provider
 <p align="center">
   <img src="assets/Test.png" alt="S3bucket" width="750">
 </p>
