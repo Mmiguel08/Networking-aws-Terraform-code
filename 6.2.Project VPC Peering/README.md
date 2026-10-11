@@ -58,17 +58,17 @@ ping <EC2-C private IP>      # works over the peering
 
 ### EC2 Connectivity — Northern Virginia
 <p align="center">
-  <img src="assets/3.ec2NvirginiaPing.png" alt="EC2 Northern Virginia Connectivity Test" width="750">
+  <img src="assets/3ec2NvirgiaPing.png" alt="EC2 Northern Virginia Connectivity Test" width="750">
 </p>
 
 ### EC2 Connectivity — Mumbai
 <p align="center">
-  <img src="assets/4.ec2MumbaiPing.png" alt="EC2 Mumbai Connectivity Test" width="750">
+  <img src="assets/4.ec2Mumbaiping.png" alt="EC2 Mumbai Connectivity Test" width="750">
 </p>
 
 ### VPC Peering Verification
 <p align="center">
-  <img src="assets/5.1peeringcheck.png" alt="VPC Peering Verification" width="750">
+  <img src="assets/5.1peeringcheck.png.png" alt="VPC Peering Verification" width="750">
 </p>
 
 <p align="center">
