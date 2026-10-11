@@ -1,13 +1,9 @@
 # 6.1 - Inter-region VPC Peering with public/private subnets and AWS SSM access
 
-## Architecture
-| Resource | Region | CIDR |
-|----------|--------|------|
-| VPC-A | ap-south-1 (Mumbai) | 10.100.0.0/16 |
-| Public subnet (EC2-A, public IP) | ap-south-1a | 10.100.0.0/24 |
-| Private subnet (EC2-B) | ap-south-1a | 10.100.11.0/24 |
-| VPC-B | us-east-1 (N. Virginia) | 10.200.0.0/16 |
-| Private subnet (EC2-C) | us-east-1a | 10.200.11.0/24 |
+### Network Topology
+<p align="center">
+  <img src="assets/2.Topologia.png" alt="VPC Peering Architecture" width="750">
+</p>
 
 - VPC-A has an Internet Gateway; EC2-A sits in the public subnet.
 - Inter-region VPC peering between VPC-A and VPC-B.
@@ -58,11 +54,6 @@ ping <EC2-C private IP>      # works over the peering
 ### Terraform Outputs
 <p align="center">
   <img src="assets/1.Terraform%20outputs.png" alt="Terraform Outputs" width="750">
-</p>
-
-### Network Topology
-<p align="center">
-  <img src="assets/2.Topologia.png" alt="VPC Peering Architecture" width="750">
 </p>
 
 ### EC2 Connectivity — Northern Virginia
