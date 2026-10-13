@@ -28,10 +28,10 @@ module "vpc_a" {
 module "vpc_b" {
   source = "./module/vpc"
 
-  name                         = "${var.project_name}-vpc-b"
-  vpc_cidr                     = var.vpc_b_cidr
-  availability_zone            = "${var.region}a"
-  private_subnet_cidr          = var.nlb_subnet_b_cidr
+  name                          = "${var.project_name}-vpc-b"
+  vpc_cidr                      = var.vpc_b_cidr
+  availability_zone             = "${var.region}a"
+  private_subnet_cidr           = var.nlb_subnet_b_cidr
   secondary_private_subnet_cidr = var.app_subnet_b_cidr
 }
 
@@ -63,12 +63,12 @@ module "ec2_c" {
 module "privatelink_provider" {
   source = "./module/privatelink_provider"
 
-  name                = var.project_name
-  vpc_id              = module.vpc_b.vpc_id
-  nlb_subnet_ids      = [module.vpc_b.private_subnet_id]
-  target_instance_id  = module.ec2_c.instance_id
-  port                = var.service_port
-  allowed_principals  = ["arn:aws:iam::${data.aws_caller_identity.current.account_id}:root"]
+  name               = var.project_name
+  vpc_id             = module.vpc_b.vpc_id
+  nlb_subnet_ids     = [module.vpc_b.private_subnet_id]
+  target_instance_id = module.ec2_c.instance_id
+  port               = var.service_port
+  allowed_principals = ["arn:aws:iam::${data.aws_caller_identity.current.account_id}:root"]
 }
 
 ############################################

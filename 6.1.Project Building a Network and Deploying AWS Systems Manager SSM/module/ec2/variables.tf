@@ -1,10 +1,10 @@
 variable "ec2_config" {
   type = object({
-    instance_type = string
-    subnet_id = string
-    public_ip = optional(bool, false)
+    instance_type     = string
+    subnet_id         = string
+    public_ip         = optional(bool, false)
     security_group_id = optional(list(string))
-    tags = map(string) 
+    tags              = map(string)
   })
 
   description = <<EOT

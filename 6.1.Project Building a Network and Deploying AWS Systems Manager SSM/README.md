@@ -6,7 +6,6 @@ This project creates a complete AWS networking foundation and integrates it with
   <img src="./assets/project-image.png" alt="AWS VPC and SSM deployment architecture" width="900" />
 </p>
 
-
 ## Overview
 
 The project includes:
@@ -41,7 +40,7 @@ The project includes:
 - `variables.tf` — region and VPC endpoint list inputs
 - `provider.tf` — AWS provider setup
 - `module/vpc/main.tf` — VPC and routing resources
-- `module/vpc/outups.tf` — VPC outputs used by parent module
+- `module/vpc/outputs.tf` — VPC outputs used by parent module
 - `module/ssm/main.tf` — IAM role and SSM service configuration
 - `module/ec2/main.tf` — EC2 instance creation based on a reusable template
 
